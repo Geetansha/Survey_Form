@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Survey Form</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div class="mainHeading">Survey Form for an Organization</div>
+        <form id="formId" name="formStud" onsubmit="submitForm()" >
+            <div id="name">
+                <label for="nameId" class="nameLabel">Name</label><br>
+                <input type="text" id="nameId" placeholder="Enter your name" class="nameInput" minlength="4" maxlength="20" required>
+            </div>
+
+            <div id="email">
+                <label for="emailId" class="emailLabel">Email</label><br>
+                <input type="email" id="emailId" placeholder="Enter your Email" class="emailInput"  minlength="6" maxlength="20" required>
+            </div>
+
+            <div id="age">
+                <label for="ageId" class="ageLabel">Age</label><br>
+                <input type="number" id="ageId" placeholder="Age" class="ageInput" >
+            </div>
+
+            <div id="role">
+                <label class="roleLabel" for="roleId">Which option best describes your current role?</label><br>
+                <select required class="roleInput" id="roleId" >
+                    <option value="">Select Current Role</option>
+                    <option value="Graphic Designer">Graphic Designer</option>
+                    <option value="Web Developer">Web Developer</option>
+                    <option value="">Content Writer</option>
+                    <option value="">Audio/Video Editor</option>
+                </select>
+                
+            </div>
+
+            <div id="aresExcite">
+                <label for="aresId" class="aresExciteLabel">What is the one thing which excites you most about our Organization?</label><br>
+                <select class="aresInput" id="aresId" required>
+                    <option value="" >Select an Option</option>
+                    <option value="Transparency">Transparency</option>
+                    <option value="qual">Quality of Content</option>
+                    <option value="Learning">Peer Group</option>
+                    <option value="">Innovation</option>
+                </select>
+                
+            </div>
+            
+            <div id="comments">
+                <label for="commentsId" class="commentsLabel">Any comments or suggestions?</label><br>
+                <textarea required id="commentsId" type="text" placeholder="Enter your comment here"
+                 class="commentsInput" minlength="5"></textarea>  
+            </div>
+
+            <button type="submit" class="submitButton">Submit</button>
+        </form> 
+
+
+        <script src="./javascripts.js"></script>
+    </body>
+</html>

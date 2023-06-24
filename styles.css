@@ -1,0 +1,78 @@
+
+            *{
+                padding: 0px;
+                margin:0px;
+                box-sizing: border-box;
+            }
+            body{
+                background-color: lightskyblue;
+                text-align: center;
+                background-image: url('./images/rocks.jpg');
+                 background-repeat:no-repeat;
+                 height: 600px;
+                background-position: center;
+                background-size: cover;
+                position: relative;
+            }
+            .mainHeading{
+                text-align: center;
+                font-size:xx-large;
+                margin-bottom: 6px;
+            }
+            #formId{
+                text-align: center;
+                margin-right: auto;margin-left: auto;
+                background-color: rgb(3, 29, 54);
+                border: 2px solid rgb(25, 25, 156);
+                height: 501px;
+                width: 800px;
+                position: relative;
+            }
+            .submitButton{
+               background-color: green;
+                width: 82%;
+                margin-top: 15px;
+                resize: vertical;
+            }
+            button[type=submit] :hover{
+                background-color: rgb(255, 192, 231);
+            }
+            .nameInput,.ageInput,.commentsInput,.aresInput,.emailInput,.roleInput{
+                border: 2px solid lightseagreen;
+                width: 80%;
+                margin:12px;
+                resize: vertical;
+            }
+            .nameLabel,.emailLabel,.ageLabel,.roleLabel,.aresExciteLabel,.commentsLabel{
+                color: whitesmoke;
+                margin-bottom: 4px;
+                margin:6px;
+                padding:2px;
+            }
+            .commentsInput{
+                width: 647px; height: 42px;
+                resize: none;
+            }
+            label{
+                margin-top: 11px;
+            }
+
+            @media screen and (max-width: 699px) {
+                .nameInput,.ageInput,.commentsInput,.aresInput,.emailInput,.roleInput {
+                  width: 55%;
+                  margin-top: 0;
+                  float: left;
+                }
+                .nameLabel,.emailLabel,.ageLabel,.roleLabel,.aresExciteLabel,.commentsLabel{
+                    width: 60%;
+                    margin-top: 0;
+                    float: left;
+                }
+                .submitButton{
+                    width: 55%;
+                    margin-top: 0;
+                    margin-left: 9px;
+                    float: left;
+                }
+              }
+        
